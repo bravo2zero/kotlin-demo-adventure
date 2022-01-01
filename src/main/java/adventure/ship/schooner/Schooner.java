@@ -27,7 +27,6 @@ public class Schooner implements Ship {
         if (crew == null) {
             crew = new LinkedHashMap<>();
         }
-        crew.put(null,null);
         return crew;
     }
 
