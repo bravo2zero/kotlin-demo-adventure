@@ -4,8 +4,6 @@ import adventure.AdventureException;
 import adventure.ship.Role;
 import adventure.ship.Sailor;
 
-import static adventure.ship.Role.Doctor;
-
 public class CabinBoyDuty extends SchoonerDuty {
     @Override
     public void carryOn(Schooner ship, Sailor sailor) throws AdventureException {
