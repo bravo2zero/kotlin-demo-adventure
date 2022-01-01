@@ -48,7 +48,7 @@ sealed class FrigateDuty : Duty<Frigate> {
         private val role = Role.Cook
         override fun carryOn(ship: Frigate, sailor: Sailor) {
             when {
-                ship.provisions.size >= 3 -> say(role, sailor, "Pint of grog to everyone!")
+                ship.provisions.size > 2 -> say(role, sailor, "Pint of grog to everyone!")
                 else -> report(role, sailor, "Ship has not enough food!")
             }
         }
