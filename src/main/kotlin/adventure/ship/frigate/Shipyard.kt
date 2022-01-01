@@ -9,11 +9,11 @@ fun buildFrigate(name: String, init: Frigate.() -> Unit): Frigate {
     return frigate
 }
 
-fun Frigate.enlist(vararg positions: Pair<FrigateDuty, Sailor>) {
-    this.crew.putAll(positions)
+fun Frigate.enlistCrew(vararg members: Pair<FrigateDuty, Sailor>) {
+    this.crew.putAll(members)
 }
 
-fun Frigate.load(vararg supplies: String) {
+fun Frigate.loadSupplies(vararg supplies: String) {
     this.provisions.addAll(supplies)
 }
 
